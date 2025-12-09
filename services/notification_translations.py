@@ -1,0 +1,313 @@
+"""
+Notification message translations for all supported languages
+Supports: English, Marathi, Hindi, Gujarati, Tamil, Kannada
+"""
+from models.notification import NotificationType
+from models.user import Language
+
+NOTIFICATION_TITLES = {
+    Language.english: {
+        NotificationType.ORDER_INITIATED: "Order Confirmed",
+        NotificationType.DRIVER_ASSIGNED: "Driver Assigned",
+        NotificationType.ORDER_IN_TRANSIT: "Delivery On The Way",
+        NotificationType.ORDER_DELIVERED: "Delivery Completed",
+        NotificationType.ORDER_CANCELLED: "Order Cancelled",
+        NotificationType.NEW_ORDER: "New Order Received",
+        NotificationType.DELIVERY_STARTED: "Delivery Started",
+        NotificationType.DELIVERY_COMPLETED: "Delivery Completed",
+        NotificationType.PAYMENT_RECEIVED: "Payment Received",
+        NotificationType.LOW_STOCK: "Low Stock Alert",
+        NotificationType.ORDER_ASSIGNED: "New Delivery Assigned",
+        NotificationType.ORDER_UNASSIGNED: "Delivery Unassigned",
+        NotificationType.PAYMENT_CONFIRMED: "Payment Confirmed",
+    },
+    Language.marathi: {
+        NotificationType.ORDER_INITIATED: "ऑर्डर पुष्टी",
+        NotificationType.DRIVER_ASSIGNED: "ड्रायव्हर नियुक्त",
+        NotificationType.ORDER_IN_TRANSIT: "डिलिव्हरी मार्गावर",
+        NotificationType.ORDER_DELIVERED: "डिलिव्हरी पूर्ण",
+        NotificationType.ORDER_CANCELLED: "ऑर्डर रद्द",
+        NotificationType.NEW_ORDER: "नवीन ऑर्डर",
+        NotificationType.DELIVERY_STARTED: "डिलिव्हरी सुरू",
+        NotificationType.DELIVERY_COMPLETED: "डिलिव्हरी पूर्ण",
+        NotificationType.PAYMENT_RECEIVED: "पेमेंट मिळाले",
+        NotificationType.LOW_STOCK: "कमी स्टॉक सूचना",
+        NotificationType.ORDER_ASSIGNED: "नवीन डिलिव्हरी",
+        NotificationType.ORDER_UNASSIGNED: "डिलिव्हरी काढली",
+        NotificationType.PAYMENT_CONFIRMED: "पेमेंट पुष्टी",
+    },
+    Language.hindi: {
+        NotificationType.ORDER_INITIATED: "ऑर्डर पुष्टि",
+        NotificationType.DRIVER_ASSIGNED: "ड्राइवर नियुक्त",
+        NotificationType.ORDER_IN_TRANSIT: "डिलीवरी रास्ते में",
+        NotificationType.ORDER_DELIVERED: "डिलीवरी पूर्ण",
+        NotificationType.ORDER_CANCELLED: "ऑर्डर रद्द",
+        NotificationType.NEW_ORDER: "नया ऑर्डर",
+        NotificationType.DELIVERY_STARTED: "डिलीवरी शुरू",
+        NotificationType.DELIVERY_COMPLETED: "डिलीवरी पूर्ण",
+        NotificationType.PAYMENT_RECEIVED: "भुगतान प्राप्त",
+        NotificationType.LOW_STOCK: "कम स्टॉक सूचना",
+        NotificationType.ORDER_ASSIGNED: "नई डिलीवरी",
+        NotificationType.ORDER_UNASSIGNED: "डिलीवरी हटाई गई",
+        NotificationType.PAYMENT_CONFIRMED: "भुगतान पुष्टि",
+    },
+    Language.gujarati: {
+        NotificationType.ORDER_INITIATED: "ઓર્ડર પુષ્ટિ",
+        NotificationType.DRIVER_ASSIGNED: "ડ્રાઇવર નિયુક્ત",
+        NotificationType.ORDER_IN_TRANSIT: "ડિલિવરી રસ્તામાં",
+        NotificationType.ORDER_DELIVERED: "ડિલિવરી પૂર્ણ",
+        NotificationType.ORDER_CANCELLED: "ઓર્ડર રદ",
+        NotificationType.NEW_ORDER: "નવો ઓર્ડર",
+        NotificationType.DELIVERY_STARTED: "ડિલિવરી શરૂ",
+        NotificationType.DELIVERY_COMPLETED: "ડિલિવરી પૂર્ણ",
+        NotificationType.PAYMENT_RECEIVED: "ચુકવણી મળી",
+        NotificationType.LOW_STOCK: "ઓછો સ્ટોક સૂચના",
+        NotificationType.ORDER_ASSIGNED: "નવી ડિલિવરી",
+        NotificationType.ORDER_UNASSIGNED: "ડિલિવરી દૂર કરી",
+        NotificationType.PAYMENT_CONFIRMED: "ચુકવણી પુષ્ટિ",
+    },
+    Language.tamil: {
+        NotificationType.ORDER_INITIATED: "ஆர்டர் உறுதி",
+        NotificationType.DRIVER_ASSIGNED: "டிரைவர் நியமிக்கப்பட்டார்",
+        NotificationType.ORDER_IN_TRANSIT: "டெலிவரி வழியில்",
+        NotificationType.ORDER_DELIVERED: "டெலிவரி முடிந்தது",
+        NotificationType.ORDER_CANCELLED: "ஆர்டர் ரத்து",
+        NotificationType.NEW_ORDER: "புதிய ஆர்டர்",
+        NotificationType.DELIVERY_STARTED: "டெலிவரி தொடங்கியது",
+        NotificationType.DELIVERY_COMPLETED: "டெலிவரி முடிந்தது",
+        NotificationType.PAYMENT_RECEIVED: "பணம் பெறப்பட்டது",
+        NotificationType.LOW_STOCK: "குறைந்த இருப்பு எச்சரிக்கை",
+        NotificationType.ORDER_ASSIGNED: "புதிய டெலிவரி",
+        NotificationType.ORDER_UNASSIGNED: "டெலிவரி நீக்கப்பட்டது",
+        NotificationType.PAYMENT_CONFIRMED: "பணம் உறுதி",
+    },
+    Language.kannada: {
+        NotificationType.ORDER_INITIATED: "ಆರ್ಡರ್ ದೃಢೀಕರಣ",
+        NotificationType.DRIVER_ASSIGNED: "ಚಾಲಕ ನೇಮಕ",
+        NotificationType.ORDER_IN_TRANSIT: "ವಿತರಣೆ ಮಾರ್ಗದಲ್ಲಿ",
+        NotificationType.ORDER_DELIVERED: "ವಿತರಣೆ ಪೂರ್ಣ",
+        NotificationType.ORDER_CANCELLED: "ಆರ್ಡರ್ ರದ್ದು",
+        NotificationType.NEW_ORDER: "ಹೊಸ ಆರ್ಡರ್",
+        NotificationType.DELIVERY_STARTED: "ವಿತರಣೆ ಪ್ರಾರಂಭ",
+        NotificationType.DELIVERY_COMPLETED: "ವಿತರಣೆ ಪೂರ್ಣ",
+        NotificationType.PAYMENT_RECEIVED: "ಪಾವತಿ ಸ್ವೀಕರಿಸಲಾಗಿದೆ",
+        NotificationType.LOW_STOCK: "ಕಡಿಮೆ ಸ್ಟಾಕ್ ಎಚ್ಚರಿಕೆ",
+        NotificationType.ORDER_ASSIGNED: "ಹೊಸ ವಿತರಣೆ",
+        NotificationType.ORDER_UNASSIGNED: "ವಿತರಣೆ ತೆಗೆಯಲಾಗಿದೆ",
+        NotificationType.PAYMENT_CONFIRMED: "ಪಾವತಿ ದೃಢೀಕರಣ",
+    },
+}
+
+NOTIFICATION_MESSAGES = {
+    Language.english: {
+        NotificationType.ORDER_INITIATED: "Your order #{order_id} has been confirmed. {liters}L diesel - ₹{amount}",
+        NotificationType.DRIVER_ASSIGNED: "Driver {driver_name} has been assigned to your order #{order_id}",
+        NotificationType.ORDER_IN_TRANSIT: "Your diesel delivery #{order_id} is on the way. Driver will arrive soon.",
+        NotificationType.ORDER_DELIVERED: "Your order #{order_id} has been delivered successfully. {liters}L delivered. Thank you!",
+        NotificationType.ORDER_CANCELLED: "Your order #{order_id} has been cancelled.",
+        NotificationType.NEW_ORDER: "New order #{order_id} from {customer_name}. {liters}L - ₹{amount}",
+        NotificationType.DELIVERY_STARTED: "Driver {driver_name} started delivery for order #{order_id}",
+        NotificationType.DELIVERY_COMPLETED: "Order #{order_id} delivered by {driver_name}",
+        NotificationType.PAYMENT_RECEIVED: "Payment of ₹{amount} received for order #{order_id}",
+        NotificationType.LOW_STOCK: "Diesel stock is low: {stock_level}L remaining",
+        NotificationType.ORDER_ASSIGNED: "New delivery assigned: Order #{order_id} to {customer_name}. {liters}L diesel.",
+        NotificationType.ORDER_UNASSIGNED: "Order #{order_id} has been unassigned from you.",
+        NotificationType.PAYMENT_CONFIRMED: "Payment of ₹{amount} confirmed for order #{order_id}",
+    },
+    Language.marathi: {
+        NotificationType.ORDER_INITIATED: "तुमची ऑर्डर #{order_id} पुष्टी झाली. {liters}L डिझेल - ₹{amount}",
+        NotificationType.DRIVER_ASSIGNED: "ड्रायव्हर {driver_name} तुमच्या ऑर्डर #{order_id} साठी नियुक्त",
+        NotificationType.ORDER_IN_TRANSIT: "तुमची डिझेल डिलिव्हरी #{order_id} मार्गावर आहे. ड्रायव्हर लवकरच येईल.",
+        NotificationType.ORDER_DELIVERED: "तुमची ऑर्डर #{order_id} यशस्वीरित्या वितरित. {liters}L वितरित. धन्यवाद!",
+        NotificationType.ORDER_CANCELLED: "तुमची ऑर्डर #{order_id} रद्द झाली.",
+        NotificationType.NEW_ORDER: "नवीन ऑर्डर #{order_id} {customer_name} कडून. {liters}L - ₹{amount}",
+        NotificationType.DELIVERY_STARTED: "ड्रायव्हर {driver_name} ने ऑर्डर #{order_id} डिलिव्हरी सुरू केली",
+        NotificationType.DELIVERY_COMPLETED: "ऑर्डर #{order_id} {driver_name} द्वारे वितरित",
+        NotificationType.PAYMENT_RECEIVED: "₹{amount} पेमेंट ऑर्डर #{order_id} साठी मिळाले",
+        NotificationType.LOW_STOCK: "डिझेल स्टॉक कमी आहे: {stock_level}L उरले",
+        NotificationType.ORDER_ASSIGNED: "नवीन डिलिव्हरी: ऑर्डर #{order_id} {customer_name} ला. {liters}L डिझेल.",
+        NotificationType.ORDER_UNASSIGNED: "ऑर्डर #{order_id} तुमच्याकडून काढली गेली.",
+        NotificationType.PAYMENT_CONFIRMED: "₹{amount} पेमेंट ऑर्डर #{order_id} साठी पुष्टी",
+    },
+    Language.hindi: {
+        NotificationType.ORDER_INITIATED: "आपका ऑर्डर #{order_id} पुष्टि हो गया। {liters}L डीजल - ₹{amount}",
+        NotificationType.DRIVER_ASSIGNED: "ड्राइवर {driver_name} आपके ऑर्डर #{order_id} के लिए नियुक्त",
+        NotificationType.ORDER_IN_TRANSIT: "आपकी डीजल डिलीवरी #{order_id} रास्ते में है। ड्राइवर जल्द आएगा।",
+        NotificationType.ORDER_DELIVERED: "आपका ऑर्डर #{order_id} सफलतापूर्वक डिलीवर। {liters}L डिलीवर। धन्यवाद!",
+        NotificationType.ORDER_CANCELLED: "आपका ऑर्डर #{order_id} रद्द हो गया।",
+        NotificationType.NEW_ORDER: "नया ऑर्डर #{order_id} {customer_name} से। {liters}L - ₹{amount}",
+        NotificationType.DELIVERY_STARTED: "ड्राइवर {driver_name} ने ऑर्डर #{order_id} डिलीवरी शुरू की",
+        NotificationType.DELIVERY_COMPLETED: "ऑर्डर #{order_id} {driver_name} द्वारा डिलीवर",
+        NotificationType.PAYMENT_RECEIVED: "₹{amount} भुगतान ऑर्डर #{order_id} के लिए प्राप्त",
+        NotificationType.LOW_STOCK: "डीजल स्टॉक कम है: {stock_level}L बाकी",
+        NotificationType.ORDER_ASSIGNED: "नई डिलीवरी: ऑर्डर #{order_id} {customer_name} को। {liters}L डीजल।",
+        NotificationType.ORDER_UNASSIGNED: "ऑर्डर #{order_id} आपसे हटा दी गई।",
+        NotificationType.PAYMENT_CONFIRMED: "₹{amount} भुगतान ऑर्डर #{order_id} के लिए पुष्टि",
+    },
+    Language.gujarati: {
+        NotificationType.ORDER_INITIATED: "તમારો ઓર્ડર #{order_id} પુષ્ટિ થયો. {liters}L ડીઝલ - ₹{amount}",
+        NotificationType.DRIVER_ASSIGNED: "ડ્રાઇવર {driver_name} તમારા ઓર્ડર #{order_id} માટે નિયુક્ત",
+        NotificationType.ORDER_IN_TRANSIT: "તમારી ડીઝલ ડિલિવરી #{order_id} રસ્તામાં છે. ડ્રાઇવર ટૂંક સમયમાં આવશે.",
+        NotificationType.ORDER_DELIVERED: "તમારો ઓર્ડર #{order_id} સફળતાપૂર્વક ડિલિવર. {liters}L ડિલિવર. આભાર!",
+        NotificationType.ORDER_CANCELLED: "તમારો ઓર્ડર #{order_id} રદ થયો.",
+        NotificationType.NEW_ORDER: "નવો ઓર્ડર #{order_id} {customer_name} તરફથી. {liters}L - ₹{amount}",
+        NotificationType.DELIVERY_STARTED: "ડ્રાઇવર {driver_name} એ ઓર્ડર #{order_id} ડિલિવરી શરૂ કરી",
+        NotificationType.DELIVERY_COMPLETED: "ઓર્ડર #{order_id} {driver_name} દ્વારા ડિલિવર",
+        NotificationType.PAYMENT_RECEIVED: "₹{amount} ચુકવણી ઓર્ડર #{order_id} માટે મળી",
+        NotificationType.LOW_STOCK: "ડીઝલ સ્ટોક ઓછો છે: {stock_level}L બાકી",
+        NotificationType.ORDER_ASSIGNED: "નવી ડિલિવરી: ઓર્ડર #{order_id} {customer_name} ને. {liters}L ડીઝલ.",
+        NotificationType.ORDER_UNASSIGNED: "ઓર્ડર #{order_id} તમારાથી દૂર કરી.",
+        NotificationType.PAYMENT_CONFIRMED: "₹{amount} ચુકવણી ઓર્ડર #{order_id} માટે પુષ્ટિ",
+    },
+    Language.tamil: {
+        NotificationType.ORDER_INITIATED: "உங்கள் ஆர்டர் #{order_id} உறுதிப்படுத்தப்பட்டது. {liters}L டீசல் - ₹{amount}",
+        NotificationType.DRIVER_ASSIGNED: "டிரைவர் {driver_name} உங்கள் ஆர்டர் #{order_id} க்கு நியமிக்கப்பட்டார்",
+        NotificationType.ORDER_IN_TRANSIT: "உங்கள் டீசல் டெலிவரி #{order_id} வழியில் உள்ளது. டிரைவர் விரைவில் வருவார்.",
+        NotificationType.ORDER_DELIVERED: "உங்கள் ஆர்டர் #{order_id} வெற்றிகரமாக டெலிவரி. {liters}L டெலிவரி. நன்றி!",
+        NotificationType.ORDER_CANCELLED: "உங்கள் ஆர்டர் #{order_id} ரத்து செய்யப்பட்டது.",
+        NotificationType.NEW_ORDER: "புதிய ஆர்டர் #{order_id} {customer_name} இடமிருந்து. {liters}L - ₹{amount}",
+        NotificationType.DELIVERY_STARTED: "டிரைவர் {driver_name} ஆர்டர் #{order_id} டெலிவரி தொடங்கினார்",
+        NotificationType.DELIVERY_COMPLETED: "ஆர்டர் #{order_id} {driver_name} மூலம் டெலிவரி",
+        NotificationType.PAYMENT_RECEIVED: "₹{amount} பணம் ஆர்டர் #{order_id} க்கு பெறப்பட்டது",
+        NotificationType.LOW_STOCK: "டீசல் இருப்பு குறைவு: {stock_level}L மீதம்",
+        NotificationType.ORDER_ASSIGNED: "புதிய டெலிவரி: ஆர்டர் #{order_id} {customer_name} க்கு. {liters}L டீசல்.",
+        NotificationType.ORDER_UNASSIGNED: "ஆர்டர் #{order_id} உங்களிடமிருந்து நீக்கப்பட்டது.",
+        NotificationType.PAYMENT_CONFIRMED: "₹{amount} பணம் ஆர்டர் #{order_id} க்கு உறுதி",
+    },
+    Language.kannada: {
+        NotificationType.ORDER_INITIATED: "ನಿಮ್ಮ ಆರ್ಡರ್ #{order_id} ದೃಢೀಕರಿಸಲಾಗಿದೆ. {liters}L ಡೀಸೆಲ್ - ₹{amount}",
+        NotificationType.DRIVER_ASSIGNED: "ಚಾಲಕ {driver_name} ನಿಮ್ಮ ಆರ್ಡರ್ #{order_id} ಗೆ ನೇಮಕ",
+        NotificationType.ORDER_IN_TRANSIT: "ನಿಮ್ಮ ಡೀಸೆಲ್ ವಿತರಣೆ #{order_id} ಮಾರ್ಗದಲ್ಲಿದೆ. ಚಾಲಕ ಶೀಘ್ರದಲ್ಲೇ ಬರುತ್ತಾರೆ.",
+        NotificationType.ORDER_DELIVERED: "ನಿಮ್ಮ ಆರ್ಡರ್ #{order_id} ಯಶಸ್ವಿಯಾಗಿ ವಿತರಣೆ. {liters}L ವಿತರಣೆ. ಧನ್ಯವಾದ!",
+        NotificationType.ORDER_CANCELLED: "ನಿಮ್ಮ ಆರ್ಡರ್ #{order_id} ರದ್ದಾಗಿದೆ.",
+        NotificationType.NEW_ORDER: "ಹೊಸ ಆರ್ಡರ್ #{order_id} {customer_name} ರಿಂದ. {liters}L - ₹{amount}",
+        NotificationType.DELIVERY_STARTED: "ಚಾಲಕ {driver_name} ಆರ್ಡರ್ #{order_id} ವಿತರಣೆ ಪ್ರಾರಂಭಿಸಿದರು",
+        NotificationType.DELIVERY_COMPLETED: "ಆರ್ಡರ್ #{order_id} {driver_name} ಮೂಲಕ ವಿತರಣೆ",
+        NotificationType.PAYMENT_RECEIVED: "₹{amount} ಪಾವತಿ ಆರ್ಡರ್ #{order_id} ಗೆ ಸ್ವೀಕರಿಸಲಾಗಿದೆ",
+        NotificationType.LOW_STOCK: "ಡೀಸೆಲ್ ಸ್ಟಾಕ್ ಕಡಿಮೆ: {stock_level}L ಉಳಿದಿದೆ",
+        NotificationType.ORDER_ASSIGNED: "ಹೊಸ ವಿತರಣೆ: ಆರ್ಡರ್ #{order_id} {customer_name} ಗೆ. {liters}L ಡೀಸೆಲ್.",
+        NotificationType.ORDER_UNASSIGNED: "ಆರ್ಡರ್ #{order_id} ನಿಮ್ಮಿಂದ ತೆಗೆಯಲಾಗಿದೆ.",
+        NotificationType.PAYMENT_CONFIRMED: "₹{amount} ಪಾವತಿ ಆರ್ಡರ್ #{order_id} ಗೆ ದೃಢೀಕರಣ",
+    },
+}
+
+SMS_TEMPLATES = {
+    Language.english: {
+        NotificationType.ORDER_INITIATED: "Yadav Diesel: Order #{order_id} confirmed. {liters}L diesel - Rs.{amount}",
+        NotificationType.DRIVER_ASSIGNED: "Yadav Diesel: Driver {driver_name} assigned to order #{order_id}",
+        NotificationType.ORDER_IN_TRANSIT: "Yadav Diesel: Your delivery #{order_id} is on the way!",
+        NotificationType.ORDER_DELIVERED: "Yadav Diesel: Order #{order_id} delivered. {liters}L. Thank you!",
+        NotificationType.ORDER_CANCELLED: "Yadav Diesel: Order #{order_id} cancelled.",
+        NotificationType.NEW_ORDER: "Yadav Diesel: New order #{order_id} - {liters}L from {customer_name}",
+        NotificationType.DELIVERY_STARTED: "Yadav Diesel: Delivery started for order #{order_id}",
+        NotificationType.DELIVERY_COMPLETED: "Yadav Diesel: Order #{order_id} completed by {driver_name}",
+        NotificationType.PAYMENT_RECEIVED: "Yadav Diesel: Payment Rs.{amount} received for order #{order_id}",
+        NotificationType.LOW_STOCK: "Yadav Diesel Alert: Low stock - {stock_level}L remaining",
+        NotificationType.ORDER_ASSIGNED: "Yadav Diesel: New delivery - Order #{order_id} to {customer_name}",
+        NotificationType.ORDER_UNASSIGNED: "Yadav Diesel: Order #{order_id} unassigned from you",
+        NotificationType.PAYMENT_CONFIRMED: "Yadav Diesel: Payment Rs.{amount} confirmed for order #{order_id}",
+    },
+    Language.marathi: {
+        NotificationType.ORDER_INITIATED: "यादव डिझेल: ऑर्डर #{order_id} पुष्टी. {liters}L डिझेल - रु.{amount}",
+        NotificationType.DRIVER_ASSIGNED: "यादव डिझेल: ड्रायव्हर {driver_name} ऑर्डर #{order_id} साठी नियुक्त",
+        NotificationType.ORDER_IN_TRANSIT: "यादव डिझेल: तुमची डिलिव्हरी #{order_id} मार्गावर!",
+        NotificationType.ORDER_DELIVERED: "यादव डिझेल: ऑर्डर #{order_id} वितरित. {liters}L. धन्यवाद!",
+        NotificationType.ORDER_CANCELLED: "यादव डिझेल: ऑर्डर #{order_id} रद्द.",
+        NotificationType.NEW_ORDER: "यादव डिझेल: नवीन ऑर्डर #{order_id} - {liters}L {customer_name} कडून",
+        NotificationType.DELIVERY_STARTED: "यादव डिझेल: ऑर्डर #{order_id} डिलिव्हरी सुरू",
+        NotificationType.DELIVERY_COMPLETED: "यादव डिझेल: ऑर्डर #{order_id} {driver_name} द्वारे पूर्ण",
+        NotificationType.PAYMENT_RECEIVED: "यादव डिझेल: रु.{amount} पेमेंट ऑर्डर #{order_id} साठी मिळाले",
+        NotificationType.LOW_STOCK: "यादव डिझेल सूचना: कमी स्टॉक - {stock_level}L उरले",
+        NotificationType.ORDER_ASSIGNED: "यादव डिझेल: नवीन डिलिव्हरी - ऑर्डर #{order_id} {customer_name} ला",
+        NotificationType.ORDER_UNASSIGNED: "यादव डिझेल: ऑर्डर #{order_id} तुमच्याकडून काढली",
+        NotificationType.PAYMENT_CONFIRMED: "यादव डिझेल: रु.{amount} पेमेंट ऑर्डर #{order_id} साठी पुष्टी",
+    },
+    Language.hindi: {
+        NotificationType.ORDER_INITIATED: "यादव डीजल: ऑर्डर #{order_id} पुष्टि. {liters}L डीजल - रु.{amount}",
+        NotificationType.DRIVER_ASSIGNED: "यादव डीजल: ड्राइवर {driver_name} ऑर्डर #{order_id} के लिए नियुक्त",
+        NotificationType.ORDER_IN_TRANSIT: "यादव डीजल: आपकी डिलीवरी #{order_id} रास्ते में!",
+        NotificationType.ORDER_DELIVERED: "यादव डीजल: ऑर्डर #{order_id} डिलीवर. {liters}L. धन्यवाद!",
+        NotificationType.ORDER_CANCELLED: "यादव डीजल: ऑर्डर #{order_id} रद्द.",
+        NotificationType.NEW_ORDER: "यादव डीजल: नया ऑर्डर #{order_id} - {liters}L {customer_name} से",
+        NotificationType.DELIVERY_STARTED: "यादव डीजल: ऑर्डर #{order_id} डिलीवरी शुरू",
+        NotificationType.DELIVERY_COMPLETED: "यादव डीजल: ऑर्डर #{order_id} {driver_name} द्वारा पूर्ण",
+        NotificationType.PAYMENT_RECEIVED: "यादव डीजल: रु.{amount} भुगतान ऑर्डर #{order_id} के लिए प्राप्त",
+        NotificationType.LOW_STOCK: "यादव डीजल सूचना: कम स्टॉक - {stock_level}L बाकी",
+        NotificationType.ORDER_ASSIGNED: "यादव डीजल: नई डिलीवरी - ऑर्डर #{order_id} {customer_name} को",
+        NotificationType.ORDER_UNASSIGNED: "यादव डीजल: ऑर्डर #{order_id} आपसे हटाई",
+        NotificationType.PAYMENT_CONFIRMED: "यादव डीजल: रु.{amount} भुगतान ऑर्डर #{order_id} के लिए पुष्टि",
+    },
+    Language.gujarati: {
+        NotificationType.ORDER_INITIATED: "યાદવ ડીઝલ: ઓર્ડર #{order_id} પુષ્ટિ. {liters}L ડીઝલ - રૂ.{amount}",
+        NotificationType.DRIVER_ASSIGNED: "યાદવ ડીઝલ: ડ્રાઇવર {driver_name} ઓર્ડર #{order_id} માટે નિયુક્ત",
+        NotificationType.ORDER_IN_TRANSIT: "યાદવ ડીઝલ: તમારી ડિલિવરી #{order_id} રસ્તામાં!",
+        NotificationType.ORDER_DELIVERED: "યાદવ ડીઝલ: ઓર્ડર #{order_id} ડિલિવર. {liters}L. આભાર!",
+        NotificationType.ORDER_CANCELLED: "યાદવ ડીઝલ: ઓર્ડર #{order_id} રદ.",
+        NotificationType.NEW_ORDER: "યાદવ ડીઝલ: નવો ઓર્ડર #{order_id} - {liters}L {customer_name} તરફથી",
+        NotificationType.DELIVERY_STARTED: "યાદવ ડીઝલ: ઓર્ડર #{order_id} ડિલિવરી શરૂ",
+        NotificationType.DELIVERY_COMPLETED: "યાદવ ડીઝલ: ઓર્ડર #{order_id} {driver_name} દ્વારા પૂર્ણ",
+        NotificationType.PAYMENT_RECEIVED: "યાદવ ડીઝલ: રૂ.{amount} ચુકવણી ઓર્ડર #{order_id} માટે મળી",
+        NotificationType.LOW_STOCK: "યાદવ ડીઝલ સૂચના: ઓછો સ્ટોક - {stock_level}L બાકી",
+        NotificationType.ORDER_ASSIGNED: "યાદવ ડીઝલ: નવી ડિલિવરી - ઓર્ડર #{order_id} {customer_name} ને",
+        NotificationType.ORDER_UNASSIGNED: "યાદવ ડીઝલ: ઓર્ડર #{order_id} તમારાથી દૂર કરી",
+        NotificationType.PAYMENT_CONFIRMED: "યાદવ ડીઝલ: રૂ.{amount} ચુકવણી ઓર્ડર #{order_id} માટે પુષ્ટિ",
+    },
+    Language.tamil: {
+        NotificationType.ORDER_INITIATED: "யாதவ் டீசல்: ஆர்டர் #{order_id} உறுதி. {liters}L டீசல் - ரூ.{amount}",
+        NotificationType.DRIVER_ASSIGNED: "யாதவ் டீசல்: டிரைவர் {driver_name} ஆர்டர் #{order_id} க்கு நியமிக்கப்பட்டார்",
+        NotificationType.ORDER_IN_TRANSIT: "யாதவ் டீசல்: உங்கள் டெலிவரி #{order_id} வழியில்!",
+        NotificationType.ORDER_DELIVERED: "யாதவ் டீசல்: ஆர்டர் #{order_id} டெலிவரி. {liters}L. நன்றி!",
+        NotificationType.ORDER_CANCELLED: "யாதவ் டீசல்: ஆர்டர் #{order_id} ரத்து.",
+        NotificationType.NEW_ORDER: "யாதவ் டீசல்: புதிய ஆர்டர் #{order_id} - {liters}L {customer_name} இடமிருந்து",
+        NotificationType.DELIVERY_STARTED: "யாதவ் டீசல்: ஆர்டர் #{order_id} டெலிவரி தொடங்கியது",
+        NotificationType.DELIVERY_COMPLETED: "யாதவ் டீசல்: ஆர்டர் #{order_id} {driver_name} மூலம் பூர்த்தி",
+        NotificationType.PAYMENT_RECEIVED: "யாதவ் டீசல்: ரூ.{amount} பணம் ஆர்டர் #{order_id} க்கு பெறப்பட்டது",
+        NotificationType.LOW_STOCK: "யாதவ் டீசல் எச்சரிக்கை: குறைந்த இருப்பு - {stock_level}L மீதம்",
+        NotificationType.ORDER_ASSIGNED: "யாதவ் டீசல்: புதிய டெலிவரி - ஆர்டர் #{order_id} {customer_name} க்கு",
+        NotificationType.ORDER_UNASSIGNED: "யாதவ் டீசல்: ஆர்டர் #{order_id} உங்களிடமிருந்து நீக்கப்பட்டது",
+        NotificationType.PAYMENT_CONFIRMED: "யாதவ் டீசல்: ரூ.{amount} பணம் ஆர்டர் #{order_id} க்கு உறுதி",
+    },
+    Language.kannada: {
+        NotificationType.ORDER_INITIATED: "ಯಾದವ್ ಡೀಸೆಲ್: ಆರ್ಡರ್ #{order_id} ದೃಢೀಕರಣ. {liters}L ಡೀಸೆಲ್ - ರೂ.{amount}",
+        NotificationType.DRIVER_ASSIGNED: "ಯಾದವ್ ಡೀಸೆಲ್: ಚಾಲಕ {driver_name} ಆರ್ಡರ್ #{order_id} ಗೆ ನೇಮಕ",
+        NotificationType.ORDER_IN_TRANSIT: "ಯಾದವ್ ಡೀಸೆಲ್: ನಿಮ್ಮ ವಿತರಣೆ #{order_id} ಮಾರ್ಗದಲ್ಲಿ!",
+        NotificationType.ORDER_DELIVERED: "ಯಾದವ್ ಡೀಸೆಲ್: ಆರ್ಡರ್ #{order_id} ವಿತರಣೆ. {liters}L. ಧನ್ಯವಾದ!",
+        NotificationType.ORDER_CANCELLED: "ಯಾದವ್ ಡೀಸೆಲ್: ಆರ್ಡರ್ #{order_id} ರದ್ದು.",
+        NotificationType.NEW_ORDER: "ಯಾದವ್ ಡೀಸೆಲ್: ಹೊಸ ಆರ್ಡರ್ #{order_id} - {liters}L {customer_name} ರಿಂದ",
+        NotificationType.DELIVERY_STARTED: "ಯಾದವ್ ಡೀಸೆಲ್: ಆರ್ಡರ್ #{order_id} ವಿತರಣೆ ಪ್ರಾರಂಭ",
+        NotificationType.DELIVERY_COMPLETED: "ಯಾದವ್ ಡೀಸೆಲ್: ಆರ್ಡರ್ #{order_id} {driver_name} ಮೂಲಕ ಪೂರ್ಣ",
+        NotificationType.PAYMENT_RECEIVED: "ಯಾದವ್ ಡೀಸೆಲ್: ರೂ.{amount} ಪಾವತಿ ಆರ್ಡರ್ #{order_id} ಗೆ ಸ್ವೀಕರಿಸಲಾಗಿದೆ",
+        NotificationType.LOW_STOCK: "ಯಾದವ್ ಡೀಸೆಲ್ ಎಚ್ಚರಿಕೆ: ಕಡಿಮೆ ಸ್ಟಾಕ್ - {stock_level}L ಉಳಿದಿದೆ",
+        NotificationType.ORDER_ASSIGNED: "ಯಾದವ್ ಡೀಸೆಲ್: ಹೊಸ ವಿತರಣೆ - ಆರ್ಡರ್ #{order_id} {customer_name} ಗೆ",
+        NotificationType.ORDER_UNASSIGNED: "ಯಾದವ್ ಡೀಸೆಲ್: ಆರ್ಡರ್ #{order_id} ನಿಮ್ಮಿಂದ ತೆಗೆಯಲಾಗಿದೆ",
+        NotificationType.PAYMENT_CONFIRMED: "ಯಾದವ್ ಡೀಸೆಲ್: ರೂ.{amount} ಪಾವತಿ ಆರ್ಡರ್ #{order_id} ಗೆ ದೃಢೀಕರಣ",
+    },
+}
+
+
+def get_notification_title(language: Language, notification_type: NotificationType) -> str:
+    """Get notification title in specified language"""
+    titles = NOTIFICATION_TITLES.get(language, NOTIFICATION_TITLES[Language.english])
+    return titles.get(notification_type, "Yadav Diesel Delivery")
+
+
+def get_notification_message(language: Language, notification_type: NotificationType, metadata: dict) -> str:
+    """Get notification message in specified language with metadata substitution"""
+    messages = NOTIFICATION_MESSAGES.get(language, NOTIFICATION_MESSAGES[Language.english])
+    template = messages.get(notification_type, "You have a new notification")
+    
+    try:
+        return template.format(**metadata)
+    except KeyError:
+        return template
+
+
+def get_sms_message(language: Language, notification_type: NotificationType, metadata: dict) -> str:
+    """Get SMS message in specified language with metadata substitution"""
+    templates = SMS_TEMPLATES.get(language, SMS_TEMPLATES[Language.english])
+    template = templates.get(notification_type, "Yadav Diesel: You have a new notification")
+    
+    try:
+        return template.format(**metadata)
+    except KeyError:
+        return template
